@@ -80,9 +80,10 @@ void setup() {
   // other option!
 
   // If your TFT's plastic wrap has a Red Tab, use the following:
-  tft.initR(INITR_REDTAB);   // initialize a ST7735R chip, red tab
-  // If your TFT's plastic wrap has a Green Tab, use the following:
-  //tft.initR(INITR_GREENTAB); // initialize a ST7735R chip, green tab
+  // tft.initR(INITR_REDTAB);   // initialize a ST7735R chip, red tab
+  // If your TFT's plastic wrap has a Green Tab, use the following: 
+  // Using seeedstudio display
+  tft.initR(INITR_GREENTAB); // initialize a ST7735R chip, green tab
   tft.setRotation(1);  // Set for landscape display on Esplora
   tft.setTextWrap(false); // Allow text to run off right edge
 }
@@ -129,9 +130,9 @@ void TestLED() {  // text RGB LED on Esplora interactively
   displayString(0,24,"Joystick L/R is +- Green",ST7735_WHITE);
   displayString(0,34,"Slider L/R is +- Blue",ST7735_WHITE);
   
-  displayString(0,50,"Red: ",ST7735_RED);
+  displayString(0,50,"Blue: ",ST7735_RED);
   displayString(0,70,"Green: ", ST7735_GREEN);
-  displayString(0,90,"Blue: ", ST7735_BLUE);
+  displayString(0,90,"Red: ", ST7735_BLUE);
   displayString(0,107,"Press down on joystick", ST7735_YELLOW);
   displayString(0,117," when done",ST7735_YELLOW);
 
